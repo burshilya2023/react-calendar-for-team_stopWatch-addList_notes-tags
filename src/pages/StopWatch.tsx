@@ -1,9 +1,6 @@
-import { Divider } from "antd"
 import moment from "moment"
-import React, { useRef, useEffect } from "react"
-import styled from "styled-components"
+import React from "react"
 import { StopWatchTime } from "../components/StopWatchTime/StopWatchTime"
-import TimerTime from "../components/StopWatchTime/TimerTime"
 import { useLocalStorage } from "../MyHooks/useLocalStorage"
 
 //TODO:

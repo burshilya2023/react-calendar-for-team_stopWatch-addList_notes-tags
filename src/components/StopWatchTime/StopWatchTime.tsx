@@ -8,6 +8,8 @@ const StopWatchWrapper = styled.div`
 	.allButton {
 		margin-top: 25px;
 		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 		position: sticky;

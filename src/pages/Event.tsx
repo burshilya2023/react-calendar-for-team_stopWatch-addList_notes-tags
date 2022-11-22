@@ -9,7 +9,7 @@ import { CiSquareRemove } from "react-icons/ci"
 
 const EventWrapper = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 	padding: 10px;
 	/* background-color: var(--bg-1); */
 	color: var(--text);
