@@ -1,0 +1,173 @@
+@import "antd/dist/antd.css";
+@import-normalize;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  /* Typography */
+  --family: "Nunito Sans", sans-serif;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fw-light: 300;
+  --fw-normal: 600;
+  --fw-bold: 800;
+  /* Other */
+  --radii: 0.5rem;
+  --color-neutral-900: hsl(207, 19%, 9%);
+	--color-neutral-100: hsl(0, 0%, 100%);
+	--color-accent-400: hsl(142, 90%, 61%);
+  --padding:1.5rem;
+}
+body[data-theme="dark"] {
+  --text: hsl(0, 0%, 100%);
+  --bg-1: hsl(207, 26%, 17%);
+  --active: hsl(209, 66%, 20%);
+  --bg-2: hsl(209, 23%, 22%);
+  --count: rgb(152, 12, 216);
+  --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
+}
+body[data-theme="light"] {
+  --text: hsl(200, 15%, 8%);
+  --bg-1: hsl(0, 0%, 98%);
+  --active: hsl(0, 1%, 37%);
+  --bg-2: hsl(0, 0%, 86%);
+  --count: rgb(0, 163, 163);
+  --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+html,
+body {
+  height: 100%;
+  // scrollbar-color: #458245 #714826; 
+  scrollbar-width: thin;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--family);
+  color: var(--text);
+  font-weight: var(--fw-light);
+  background-color: var(--bg-1);
+  overflow-x: hidden;
+  opacity: 1;
+  width: 100%;
+  position: relative;
+  line-height: 1.65;
+}
+*:focus {
+  outline: none;
+}
+ /*====== 
+ scroll 
+ ========*/
+::-webkit-scrollbar {
+  width: 15px; 
+  height: 8px; 
+  background-color: #143861;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #493441;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
+ /*====== 
+default tegs all
+ ========*/
+ ul {
+  padding: 0;
+  margin: 0;
+  color: var(--text);
+}
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text);
+  font-family: var(--family);
+  font-weight: 800;
+  line-height: 1;
+}
+p {
+  margin-bottom: 1em;
+  color: var(--text);
+}
+h1 {
+  color: var(--text);
+  font-size: clamp(1rem, 1rem + 5vw, 5rem);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ /*====== 
+own wrapper app 
+ ========*/
+.Wrapper{
+  display: grid;
+  gap: 30px;
+}
+ /*====== 
+container(use 1 time)
+ ========*/
+.container {
+  width: min(calc(90% - 2rem),65rem);
+  margin-inline:auto; 
+}
+ /*====== 
+own button//!edit
+ ========*/
+.button {
+  background: var(--bg-2);
+  height: 32px;
+  font-size: 16px;
+  line-height: 32px;
+  border-radius: 17px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  &:hover{
+    background-color: var(--active);
+    color: white;
+}
+}
+ /*====== 
+Progress bar in App
+ ========*/
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgb(77, 0, 154);
+  transform-origin: 0%;
+}
+ /*====== 
+default style(added and red over time)//!edit
+ ========*/
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  @media(min-width:40em){
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    align-items: center;
+    gap: 2em;
+  }
+}
