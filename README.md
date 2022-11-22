@@ -1,1 +1,1 @@
-# https://react-calendar-for-team-stop-watch-add-list-notes-tags.vercel.app/login
+# https://react-calendar-for-team-stop-watch-add-list-notes-tags.vercel.app/
